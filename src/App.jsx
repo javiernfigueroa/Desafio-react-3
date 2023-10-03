@@ -24,8 +24,7 @@ function App() {
       nuevoColaborador.cargo &&
       nuevoColaborador.telefono
     ) {
-      const nuevoID = (colaboradores.length + 1).toString();
-      nuevoColaborador.id = nuevoID;
+      nuevoColaborador.id = (colaboradores.length + 1).toString();
 
       setColaboradores([...colaboradores, nuevoColaborador]);
 
