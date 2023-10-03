@@ -29,10 +29,10 @@ function App() {
 
       setColaboradores([...colaboradores, nuevoColaborador]);
 
-      setAlertMessage("Colaborador agregado correctamente");
+      setAlertMessage("Colaborador agregado correctamente 😊");
       setAlertType("success");
     } else {
-      setAlertMessage("Los campos están incompletos");
+      setAlertMessage("Los campos están incompletos 😖");
       setAlertType("danger");
     }
     setTimeout(() => {
