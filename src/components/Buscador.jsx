@@ -3,10 +3,9 @@ import { useState } from "react";
 function Buscador({ onSearch }) {
   const [searchText, setSearchText] = useState("");
 
-  const handleInputChange = (event) => {
-    const text = event.target.value;
-    setSearchText(text);
-    onSearch(text);
+  const handleInputChange = ({ target: { value } }) => {
+    setSearchText(value);
+    onSearch(value);
   };
 
   return (
